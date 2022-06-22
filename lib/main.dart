@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:mypro/pages/login_page.dart';
 
 void main() {
@@ -11,11 +12,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      color: Colors.white,
       debugShowCheckedModeBanner: false,
       home: const LoginPage(),
       themeMode: ThemeMode.light,
       theme: ThemeData(
         primaryColor: Colors.red,
+        fontFamily: GoogleFonts.lato().fontFamily,
       ),
     );
   }
